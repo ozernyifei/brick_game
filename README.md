@@ -1,2 +1,2 @@
-# snake_game
-implementation of the Snake game in c++ and qt
+# brick_game
+series of implementations of the different games
