@@ -1,0 +1,37 @@
+# Doxyfile 1.8.20
+
+# Project related configurations
+PROJECT_NAME           = "BrickGame Tetris"
+PROJECT_NUMBER         = "1.0"
+PROJECT_BRIEF          = "A classic Tetris game implementation."
+USE_MDFILE_AS_MAINPAGE = README.md
+
+# Input configuration
+INPUT                  = ./brick_game/tetris ./gui/cli
+FILE_PATTERNS          = *.c *.h 
+RECURSIVE              = YES
+
+# Exclude test and unrelated directories
+EXCLUDE                = ./tests 
+EXCLUDE_PATTERNS       = */tests/*
+
+# Output configuration
+OUTPUT_DIRECTORY       = ./docs
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+
+# Extraction settings
+EXTRACT_ALL            = YES
+HIDE_UNDOC_MEMBERS     = NO
+
+# Source code inclusion
+INLINE_SOURCES         = YES
+SOURCE_BROWSER         = YES
+
+# Layout options
+GENERATE_TREEVIEW      = YES
+
+# Other configurations
+QUIET                  = NO
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
